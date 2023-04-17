@@ -1,0 +1,58 @@
+<script src="jquery-3.6.3.min.js"></script>
+<script src="tria.js"></script>
+<div class="holder">
+    <div class="r1 c1 cella1 d1"></div>
+    <div class="r1 c2 cella2"></div>
+    <div class="r1 c3 cella3 d2"></div>
+    <div class="r2 c1 cella4"></div>
+    <div class="r2 c2 cella5 d1 d2"></div>
+    <div class="r2 c3 cella6"></div>
+    <div class="r3 c1 cella7 d2"></div>
+    <div class="r3 c2 cella8"></div>
+    <div class="r3 c3 cella9 d1"></div>
+</div>
+<div id="message"></div>
+<style>
+    .holder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .holder div {
+        height: 100px;
+        width: 100px;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .holder div:hover {
+        background-color: rgb(186, 199, 211);
+        cursor: pointer;
+    }
+
+    .c2 {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .r2 {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    .vincitorex {
+        color: crimson;
+        font-size: 5.5rem;
+        transition: all .3sec;
+    }
+
+    .vincitoreo {
+        color: rgb(67, 177, 196);
+        font-size: 5.5rem;
+        transition: all .3sec;
+    }
+</style>
